@@ -5,16 +5,14 @@ interface CustomButtonProps extends TouchableOpacityProps {
 	handlePress: (event: GestureResponderEvent) => void
 	containerStyles: string
 	textStyles?: string
-	isLoading?: boolean
 }
 
-export const CustomButton = ({ title, handlePress, containerStyles, textStyles, isLoading }: CustomButtonProps) => {
+export const CustomButton = ({ title, handlePress, containerStyles, textStyles }: CustomButtonProps) => {
 	return (
 		<TouchableOpacity
 			onPress={handlePress}
 			activeOpacity={0.7}
-			className={`bg-secondary rounded-xl min-h-[62px] justify-center items-center ${containerStyles} ${isLoading ? 'opacity-50' : ''}`}
-			disabled={isLoading}>
+			className={`bg-secondary rounded-xl min-h-[62px] justify-center items-center ${containerStyles}`}>
 			<Text className={`text-primary font-psemibold text-lg ${textStyles}`}>{title}</Text>
 		</TouchableOpacity>
 	)
