@@ -1,6 +1,7 @@
+import 'react-native-reanimated'
+import { useEffect } from 'react'
 import { Slot, SplashScreen, Stack } from 'expo-router'
 import { useFonts } from 'expo-font'
-import { useEffect } from 'react'
 
 SplashScreen.preventAutoHideAsync()
 
@@ -32,6 +33,9 @@ const RootLayout = () => {
 		// </>
 		<Stack>
 			<Stack.Screen name='index' options={{ headerShown: false }} />
+			<Stack.Screen name='(auth)' options={{ headerShown: false }} />
+			<Stack.Screen name='(tabs)' options={{ headerShown: false }} />
+			{/* <Stack.Screen name='/search/[query]' options={{ headerShown: false }} /> */}
 		</Stack>
 	)
 }

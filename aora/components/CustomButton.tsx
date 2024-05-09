@@ -1,6 +1,6 @@
-import { TouchableOpacity, Text, GestureResponderEvent } from 'react-native'
+import { TouchableOpacity, Text, GestureResponderEvent, TouchableOpacityProps } from 'react-native'
 
-interface CustomButtonProps {
+interface CustomButtonProps extends TouchableOpacityProps {
 	title: string
 	handlePress: (event: GestureResponderEvent) => void
 	containerStyles: string

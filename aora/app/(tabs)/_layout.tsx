@@ -1,6 +1,6 @@
 import { View, Text, Image, ImageSourcePropType, ColorValue } from 'react-native'
 import { Tabs, Redirect } from 'expo-router'
-import { icons } from '../../constants'
+import { icons } from '@constants/index'
 
 interface TabIconProps {
 	icon: ImageSourcePropType

@@ -1,10 +1,10 @@
-import { SafeAreaView } from 'react-native-safe-area-context'
 import { View, Text, Image, ScrollView } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 import { StatusBar } from 'expo-status-bar'
 import { Redirect, router } from 'expo-router'
 
-import { images } from '../constants'
-import { CustomButton } from '../components/CustomButton'
+import { images } from '@constants/index'
+import { CustomButton } from '@components/CustomButton'
 
 const Welcome = () => {
 	return (
